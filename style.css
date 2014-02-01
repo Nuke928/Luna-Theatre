@@ -1,0 +1,89 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	font-family: Arial;
+	background-color: Grey;
+	background-image:url('bg.png');
+	background-position:center top;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-color:#00021a;
+}
+
+#wrapper {
+	width: 850px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.space {
+	width: 100%;
+	height:35px;
+}
+
+#headertext {
+	color: White;
+	text-align: center;
+}
+
+#box {
+	width:600px;
+	margin-left: auto;
+	margin-right: auto;	
+	
+	background-color: White;
+}
+
+#boxvideo {
+	padding: 20px;
+}
+
+#navigation {
+	padding: 60px;
+}
+
+#nav_l {
+	width: 250px;
+	float: left;
+}
+
+#nav_r {
+}
+
+#season_nav_head {
+	text-align: center;
+	padding: 40px;
+	padding-top: 20px;
+}
+
+#season_nav {
+	font-size: 20px;
+	text-align: center;
+}
+
+#season_nav ul {
+	list-style: none;
+}
+
+#season_nav li {
+	display: inline;
+	padding: 20px;
+}
+
+#season_nav a {
+	text-decoration: none;
+	color: Black;
+}
+
+#footer {
+	background-color: Black;
+	color: White;
+	text-align: center;
+}
+
+#footer_content {
+	padding: 20px;
+}
