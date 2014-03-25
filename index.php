@@ -19,6 +19,8 @@
 
 <?php
 
+$doc_root = dirname('__FILENAME__');
+
 // Set Defaults
 $ep = 1;
 $season = 1;
@@ -29,7 +31,7 @@ $season = $_GET['s'];
 
 // Redirect to first episode, when url is invalid
 if(!is_numeric($ep) || !is_numeric($season)) {
-	header('Location: /?e=1&s=1');
+	header('Location: '.$doc_root.'/?e=1&s=1');
 }
 
 // Convert to int
@@ -38,7 +40,7 @@ $season = intval($season);
 
 // Check valid season number
 if($season < 1 || $season > 4) {
-	header('Location: /?e=1&s=1');
+	header('Location: '.$doc_root.'?e=1&s=1');
 }
 
 // Set the max episodes per season
@@ -62,7 +64,7 @@ break;
 
 // Check valid episode number
 if($ep < 1 || $ep > $ep_max) {
-	header('Location: /?e=1&s=1');
+	header('Location: '.$doc_root.'/?e=1&s=1');
 }
 
 // Set episode names
@@ -400,10 +402,11 @@ if($nav_split) {
 <div id="season_nav">
 
 <ul>
-<li><a href="/?e=1&s=1">1</a></li>
-<li><a href="/?e=1&s=2">2</a></li>
-<li><a href="/?e=1&s=3">3</a></li>
-<li><a href="/?e=1&s=4">4</a></li>
+<?
+for($i = 1; $i <= 4; $i++) {
+	echo ("<li><a href='$doc_root/?e=1&s=$i'>$i</a></li>" . PHP_EOL);
+}
+?>
 </ul>
 
 </div>
