@@ -1,4 +1,5 @@
-<!--
+<?
+/*
     MLP:FIM Episode-Browser
     Copyright (C) 2014 Gian Sass <gian.sass@nukesoftware.de>
 
@@ -15,9 +16,7 @@
     You should have received a copy of the GNU General Public License along
     with this program; if not, write to the Free Software Foundation, Inc.,
     51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
--->
-
-<?php
+*/
 
 $doc_root = dirname('__FILENAME__');
 
@@ -58,7 +57,7 @@ case 3:
 break;
 
 case 4:
-	$ep_max = 12;
+	$ep_max = 26;
 break;
 }
 
